@@ -1,6 +1,7 @@
 package com.devai.studio.desktop
 
 import org.json.JSONObject
+import java.io.File
 
 data class CodeLanguage(
     val id: String,
@@ -428,31 +429,37 @@ object CodeLanguages {
 
     fun byId(id: String?): CodeLanguage? = all.firstOrNull { it.id == id?.trim()?.lowercase() }
 
-    /** Читает языки из resources/languages, чтобы каталог жил в файлах сборки. */
+    /** Читает языки из папки languages рядом с JAR. Файлы можно править и добавлять без пересборки. */
     fun load() {
-        val loader = CodeLanguages::class.java.classLoader
-        val index = runCatching {
-            loader.getResourceAsStream("languages/index.txt")?.bufferedReader()?.readLines().orEmpty()
-        }.getOrDefault(emptyList())
-        val loaded = index.filter { it.endsWith(".json") }.mapNotNull { file ->
+        val dirs = listOfNotNull(
             runCatching {
-                loader.getResourceAsStream("languages/$file")?.bufferedReader()?.use { reader ->
-                    val json = JSONObject(reader.readText())
-                    val id = json.optString("id").trim()
-                    if (id.isBlank()) return@use null
-                    CodeLanguage(
-                        id = id,
-                        name = json.optString("name", id),
-                        short = json.optString("short", id),
-                        extension = json.optString("extension"),
-                        testFramework = json.optString("testFramework", "—"),
-                        description = json.optString("description"),
-                        order = json.optInt("order", 0),
-                    )
-                }
-            }.getOrNull()
-        }.sortedWith(compareBy({ it.order }, { it.name }))
+                val jar = File(CodeLanguages::class.java.protectionDomain.codeSource.location.toURI())
+                File(jar.parentFile, "languages")
+            }.getOrNull(),
+            File(System.getProperty("user.dir"), "languages").takeIf { it.isDirectory },
+        ).distinctBy { it.absolutePath }
+        val loaded = dirs
+            .flatMap { dir -> dir.listFiles { f -> f.extension == "json" }?.toList().orEmpty() }
+            .mapNotNull { file -> runCatching { parse(file.readText()) }.getOrNull() }
+            .associateBy { it.id }
+            .values
+            .sortedWith(compareBy({ it.order }, { it.name }))
         if (loaded.isNotEmpty()) all = loaded
+    }
+
+    private fun parse(text: String): CodeLanguage? {
+        val json = JSONObject(text)
+        val id = json.optString("id").trim()
+        if (id.isBlank()) return null
+        return CodeLanguage(
+            id = id,
+            name = json.optString("name", id),
+            short = json.optString("short", id),
+            extension = json.optString("extension"),
+            testFramework = json.optString("testFramework", "—"),
+            description = json.optString("description"),
+            order = json.optInt("order", 0),
+        )
     }
 
     fun selected(id: String?): CodeLanguage = byId(id) ?: default

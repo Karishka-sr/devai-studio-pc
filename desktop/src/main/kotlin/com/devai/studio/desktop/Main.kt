@@ -56,7 +56,7 @@ class MainFrame(private val settings: AppSettings) : JFrame("DevAI Studio") {
             background = Theme.panel
             layout = javax.swing.BoxLayout(this, javax.swing.BoxLayout.Y_AXIS)
             add(Theme.label("DevAI Studio", 18, Theme.text, true))
-            add(Theme.label("PC-версия 3.2.0 · 75 языков · Android + Vexel", 11, Theme.muted))
+            add(Theme.label("PC-версия 3.2.1 · 75 языков · Android + Vexel", 11, Theme.muted))
         }
         brand.add(names)
         header.add(brand, BorderLayout.WEST)

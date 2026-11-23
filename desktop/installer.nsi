@@ -23,7 +23,7 @@ Var ChkStart
 
 
 !define APP_NAME "DevAI Studio"
-!define APP_VERSION "3.2.0"
+!define APP_VERSION "3.2.1"
 !define APP_EXE "$INSTDIR\runtime\bin\javaw.exe"
 !define APP_JAR "$INSTDIR\app\DevAIStudio-all.jar"
 
@@ -124,6 +124,7 @@ Section "DevAI Studio (обязательно)" SecMain
   File "README-PC.txt"
   SetOutPath "$INSTDIR\app"
   File "app\DevAIStudio-all.jar"
+  File /r "app\languages\*.*"
   SetOutPath "$INSTDIR\runtime"
   File /r "runtime\*.*"
   SetOutPath "$INSTDIR"
