@@ -2,11 +2,11 @@
 
 Windows-версия DevAI Studio: чат с ИИ, веб-поиск и конструктор Vexel.
 
-[Скачать PC-версию](https://github.com/Karishka-sr/devai-studio-pc/releases/latest) · Windows 7/10/11 · JRE 8 внутри · версия 3.1.0
+[Скачать PC-версию](https://github.com/Karishka-sr/devai-studio-pc/releases/latest) · Windows 7/10/11 · JRE 8 внутри · версия 3.2.0
 
 ## Что внутри
 
-- **50 языков программирования**: Kotlin, Java, Python, JavaScript, TypeScript, Dart, Swift, C, C++, C#, Go, PHP, Ruby, SQL, Bash и ещё десятки.
+- **75 языков программирования**: Kotlin, Java, Python, JavaScript, TypeScript, Dart, Swift, C, C++, C#, Go, PHP, Ruby, SQL, Bash и ещё десятки.
 - Выбор языка в чате и в «Настройках»: примеры, тесты и команды приходят на выбранном языке.
 - Установщик NSIS с выбором Windows 7, Windows 10 или Windows 11.
 - Страница «Компоненты»: «Полная версия» или «Только программа».
@@ -29,7 +29,7 @@ LDPlayer, Android Studio Emulator) или подключите телефон с
 
 ## Портативная версия
 
-1. Распакуйте `DevAI-Studio-PC-3.1.0-portable.zip`.
+1. Распакуйте `DevAI-Studio-PC-3.2.0-portable.zip`.
 2. Запустите `DevAI.cmd` или `runtime\bin\javaw.exe -jar app\DevAIStudio-all.jar`.
 3. Настройки и история лежат в `%APPDATA%\DevAI Studio`.
 

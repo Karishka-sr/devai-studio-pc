@@ -1,0 +1,11 @@
+{
+  "id": "tcl",
+  "name": "Tcl",
+  "short": "Tcl",
+  "extension": "tcl",
+  "comment": "#",
+  "testFramework": "tcltest",
+  "description": "Скрипты, EDA и автоматизация",
+  "example": "puts \"Hello, DevAI!\"",
+  "order": 55
+}

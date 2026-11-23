@@ -1,0 +1,11 @@
+{
+  "id": "d",
+  "name": "D",
+  "short": "D",
+  "extension": "d",
+  "comment": "//",
+  "testFramework": "unittest",
+  "description": "Системное программирование",
+  "example": "import std.stdio;\n\nvoid main() {\n    writeln(\"Hello, DevAI!\");\n}",
+  "order": 41
+}

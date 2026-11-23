@@ -1,0 +1,11 @@
+{
+  "id": "matlab",
+  "name": "MATLAB",
+  "short": "MATLAB",
+  "extension": "m",
+  "comment": "%",
+  "testFramework": "matlab.unittest",
+  "description": "Инженерия и научные расчёты",
+  "example": "name = 'DevAI';\nfprintf('Hello, %s!\\n', name);",
+  "order": 28
+}

@@ -1,0 +1,11 @@
+{
+  "id": "yaml",
+  "name": "YAML",
+  "short": "YAML",
+  "extension": "yaml",
+  "comment": "#",
+  "testFramework": "yamllint",
+  "description": "Конфиги, CI и Kubernetes",
+  "example": "app: DevAI Studio\nlanguage: YAML\nfeatures:\n  - chat\n  - tools",
+  "order": 23
+}

@@ -1,0 +1,11 @@
+{
+  "id": "pascal",
+  "name": "Pascal",
+  "short": "Pascal",
+  "extension": "pas",
+  "comment": "//",
+  "testFramework": "FPCUnit",
+  "description": "Delphi и legacy-проекты",
+  "example": "program Hello;\nbegin\n  writeln('Hello, DevAI!');\nend.",
+  "order": 47
+}

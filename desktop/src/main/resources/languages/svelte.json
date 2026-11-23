@@ -1,0 +1,11 @@
+{
+  "id": "svelte",
+  "name": "Svelte",
+  "short": "Svelte",
+  "extension": "svelte",
+  "comment": "//",
+  "testFramework": "Vitest",
+  "description": "Компоненты Svelte",
+  "example": "<h1>Hello, DevAI!</h1>",
+  "order": 74
+}

@@ -1,0 +1,11 @@
+{
+  "id": "assembly",
+  "name": "Assembly",
+  "short": "ASM",
+  "extension": "asm",
+  "comment": ";",
+  "testFramework": "—",
+  "description": "Низкоуровневый код и реверс",
+  "example": "global _start\n\nsection .text\n_start:\n    mov rax, 1\n    mov rdi, 1\n    lea rsi, [rel msg]\n    mov rdx, 12\n    syscall\n    mov rax, 60\n    xor rdi, rdi\n    syscall\n\nsection .rodata\nmsg: db \"Hello, DevAI\", 10",
+  "order": 36
+}

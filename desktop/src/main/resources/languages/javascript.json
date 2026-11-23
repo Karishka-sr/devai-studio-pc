@@ -1,0 +1,11 @@
+{
+  "id": "javascript",
+  "name": "JavaScript",
+  "short": "JS",
+  "extension": "js",
+  "comment": "//",
+  "testFramework": "Jest",
+  "description": "Веб, Node.js и фронтенд",
+  "example": "function greet(name) {\n  return `Hello, ${name}!`;\n}\nconsole.log(greet(\"DevAI\"));",
+  "order": 4
+}

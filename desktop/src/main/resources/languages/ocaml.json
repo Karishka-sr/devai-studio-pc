@@ -1,0 +1,11 @@
+{
+  "id": "ocaml",
+  "name": "OCaml",
+  "short": "OCaml",
+  "extension": "ml",
+  "comment": "(*",
+  "testFramework": "Alcotest",
+  "description": "Функциональный код и компиляторы",
+  "example": "print_endline \"Hello, DevAI!\"",
+  "order": 46
+}

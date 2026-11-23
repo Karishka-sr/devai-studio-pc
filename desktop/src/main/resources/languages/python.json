@@ -1,0 +1,11 @@
+{
+  "id": "python",
+  "name": "Python",
+  "short": "Python",
+  "extension": "py",
+  "comment": "#",
+  "testFramework": "pytest",
+  "description": "Скрипты, бэкенд, ML и автоматизация",
+  "example": "def greet(name: str) -> str:\n    return f\"Hello, {name}!\"\n\nprint(greet(\"DevAI\"))",
+  "order": 3
+}

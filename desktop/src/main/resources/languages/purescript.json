@@ -1,0 +1,11 @@
+{
+  "id": "purescript",
+  "name": "PureScript",
+  "short": "PureScript",
+  "extension": "purs",
+  "comment": "--",
+  "testFramework": "purescript-spec",
+  "description": "Функциональный JavaScript",
+  "example": "module Main where\n\nimport Effect.Console (log)\n\nmain = log \"Hello, DevAI!\"",
+  "order": 70
+}

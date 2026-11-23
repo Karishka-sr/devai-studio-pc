@@ -1,0 +1,11 @@
+{
+  "id": "awk",
+  "name": "AWK",
+  "short": "AWK",
+  "extension": "awk",
+  "comment": "#",
+  "testFramework": "—",
+  "description": "Обработка текста в Unix",
+  "example": "BEGIN { print \"Hello, DevAI!\" }",
+  "order": 56
+}

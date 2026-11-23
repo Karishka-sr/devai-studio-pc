@@ -1,0 +1,11 @@
+{
+  "id": "haxe",
+  "name": "Haxe",
+  "short": "Haxe",
+  "extension": "hx",
+  "comment": "//",
+  "testFramework": "Haxe Test",
+  "description": "Кроссплатформенный код: JS, C++, JVM, HL",
+  "example": "class Main {\n  static function main() {\n    trace(\"Hello, DevAI!\");\n  }\n}",
+  "order": 51
+}

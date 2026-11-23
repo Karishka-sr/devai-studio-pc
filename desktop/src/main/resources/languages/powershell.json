@@ -1,0 +1,11 @@
+{
+  "id": "powershell",
+  "name": "PowerShell",
+  "short": "PS",
+  "extension": "ps1",
+  "comment": "#",
+  "testFramework": "Pester",
+  "description": "Windows и автоматизация",
+  "example": "$name = \"DevAI\"\nWrite-Host \"Hello, $name!\"",
+  "order": 18
+}

@@ -1,0 +1,11 @@
+{
+  "id": "json",
+  "name": "JSON",
+  "short": "JSON",
+  "extension": "json",
+  "comment": "//",
+  "testFramework": "JSON Schema",
+  "description": "Конфиги и обмен данными",
+  "example": "{\n  \"app\": \"DevAI Studio\",\n  \"language\": \"JSON\"\n}",
+  "order": 22
+}

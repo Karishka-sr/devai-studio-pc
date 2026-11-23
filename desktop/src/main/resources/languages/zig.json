@@ -1,0 +1,11 @@
+{
+  "id": "zig",
+  "name": "Zig",
+  "short": "Zig",
+  "extension": "zig",
+  "comment": "//",
+  "testFramework": "zig test",
+  "description": "Системное программирование",
+  "example": "const std = @import(\"std\");\n\npub fn main() !void {\n    std.debug.print(\"Hello, DevAI!\\n\", .{});\n}",
+  "order": 38
+}

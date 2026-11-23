@@ -1,0 +1,11 @@
+{
+  "id": "go",
+  "name": "Go",
+  "short": "Go",
+  "extension": "go",
+  "comment": "//",
+  "testFramework": "testing",
+  "description": "Бэкенд, CLI и микросервисы",
+  "example": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, DevAI!\")\n}",
+  "order": 12
+}

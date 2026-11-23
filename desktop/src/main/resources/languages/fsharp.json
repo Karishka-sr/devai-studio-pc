@@ -1,0 +1,11 @@
+{
+  "id": "fsharp",
+  "name": "F#",
+  "short": "F#",
+  "extension": "fs",
+  "comment": "//",
+  "testFramework": "xUnit",
+  "description": ".NET и функциональный код",
+  "example": "printfn \"Hello, DevAI!\"",
+  "order": 34
+}

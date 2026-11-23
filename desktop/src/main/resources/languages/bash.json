@@ -1,0 +1,11 @@
+{
+  "id": "bash",
+  "name": "Bash",
+  "short": "Bash",
+  "extension": "sh",
+  "comment": "#",
+  "testFramework": "Bats",
+  "description": "Linux, CI и автоматизация",
+  "example": "#!/usr/bin/env bash\nname=\"DevAI\"\necho \"Hello, $name!\"",
+  "order": 17
+}

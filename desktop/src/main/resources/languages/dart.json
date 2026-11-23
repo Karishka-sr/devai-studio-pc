@@ -1,0 +1,11 @@
+{
+  "id": "dart",
+  "name": "Dart",
+  "short": "Dart",
+  "extension": "dart",
+  "comment": "//",
+  "testFramework": "package:test",
+  "description": "Flutter и мобильные приложения",
+  "example": "void main() {\n  print('Hello, DevAI!');\n}",
+  "order": 6
+}

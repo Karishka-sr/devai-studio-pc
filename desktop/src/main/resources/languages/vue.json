@@ -1,0 +1,11 @@
+{
+  "id": "vue",
+  "name": "Vue",
+  "short": "Vue",
+  "extension": "vue",
+  "comment": "//",
+  "testFramework": "Vitest",
+  "description": "Однофайловые компоненты Vue",
+  "example": "<template>\n  <h1>Hello, DevAI!</h1>\n</template>",
+  "order": 73
+}

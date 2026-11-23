@@ -1,0 +1,11 @@
+{
+  "id": "html",
+  "name": "HTML",
+  "short": "HTML",
+  "extension": "html",
+  "comment": "<!--",
+  "testFramework": "Playwright",
+  "description": "Разметка веб-страниц",
+  "example": "<!doctype html>\n<html lang=\"ru\">\n  <body>\n    <h1>Hello, DevAI!</h1>\n  </body>\n</html>",
+  "order": 20
+}

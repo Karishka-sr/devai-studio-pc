@@ -1,0 +1,11 @@
+{
+  "id": "cairo",
+  "name": "Cairo",
+  "short": "Cairo",
+  "extension": "cairo",
+  "comment": "//",
+  "testFramework": "cairo-test",
+  "description": "Смарт-контракты StarkNet",
+  "example": "fn main() -> felt252 {\n    'Hello, DevAI!'\n}",
+  "order": 68
+}

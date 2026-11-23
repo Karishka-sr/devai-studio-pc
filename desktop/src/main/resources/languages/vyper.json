@@ -1,0 +1,11 @@
+{
+  "id": "vyper",
+  "name": "Vyper",
+  "short": "Vyper",
+  "extension": "vy",
+  "comment": "#",
+  "testFramework": "pytest",
+  "description": "Смарт-контракты Ethereum",
+  "example": "@external\ndef hello() -> String[13]:\n    return \"Hello, DevAI!\"",
+  "order": 66
+}

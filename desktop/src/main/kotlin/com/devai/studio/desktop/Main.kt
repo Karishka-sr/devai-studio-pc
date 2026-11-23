@@ -13,6 +13,7 @@ import javax.swing.JTabbedPane
 import javax.swing.SwingUtilities
 
 fun main(args: Array<String>) {
+    CodeLanguages.load()
     System.setProperty("awt.useSystemAAFontSettings", "on")
     System.setProperty("swing.aatext", "true")
     val settings = SettingsStore.load()
@@ -55,7 +56,7 @@ class MainFrame(private val settings: AppSettings) : JFrame("DevAI Studio") {
             background = Theme.panel
             layout = javax.swing.BoxLayout(this, javax.swing.BoxLayout.Y_AXIS)
             add(Theme.label("DevAI Studio", 18, Theme.text, true))
-            add(Theme.label("PC-версия 3.1.0 · 50 языков · Android + Vexel", 11, Theme.muted))
+            add(Theme.label("PC-версия 3.2.0 · 75 языков · Android + Vexel", 11, Theme.muted))
         }
         brand.add(names)
         header.add(brand, BorderLayout.WEST)

@@ -1,0 +1,11 @@
+{
+  "id": "vhdl",
+  "name": "VHDL",
+  "short": "VHDL",
+  "extension": "vhd",
+  "comment": "--",
+  "testFramework": "GHDL",
+  "description": "ПЛИС и цифровая логика",
+  "example": "entity hello is end entity;\n\narchitecture rtl of hello is\nbegin\n  -- report \"Hello, DevAI!\" severity note;\nend architecture;",
+  "order": 49
+}

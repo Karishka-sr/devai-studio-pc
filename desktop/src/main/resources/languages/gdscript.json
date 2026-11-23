@@ -1,0 +1,11 @@
+{
+  "id": "gdscript",
+  "name": "GDScript",
+  "short": "GDScript",
+  "extension": "gd",
+  "comment": "#",
+  "testFramework": "GUT",
+  "description": "Скрипты Godot",
+  "example": "extends Node\n\nfunc _ready():\n    print(\"Hello, DevAI!\")",
+  "order": 64
+}

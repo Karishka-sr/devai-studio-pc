@@ -1,0 +1,11 @@
+{
+  "id": "groovy",
+  "name": "Groovy",
+  "short": "Groovy",
+  "extension": "groovy",
+  "comment": "//",
+  "testFramework": "Spock",
+  "description": "JVM-скрипты, Gradle и Jenkins",
+  "example": "println \"Hello, DevAI!\"",
+  "order": 16
+}

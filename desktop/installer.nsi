@@ -23,7 +23,7 @@ Var ChkStart
 
 
 !define APP_NAME "DevAI Studio"
-!define APP_VERSION "3.1.0"
+!define APP_VERSION "3.2.0"
 !define APP_EXE "$INSTDIR\runtime\bin\javaw.exe"
 !define APP_JAR "$INSTDIR\app\DevAIStudio-all.jar"
 
@@ -37,7 +37,7 @@ BrandingText "DevAI Studio · Android + Vexel"
 !define MUI_ICON "icon.ico"
 !define MUI_UNICON "icon.ico"
 !define MUI_WELCOMEPAGE_TITLE "Установка DevAI Studio"
-!define MUI_WELCOMEPAGE_TEXT "DevAI Studio — помощник разработчика для Android, 50 языков и Vexel.$\r$\n$\r$\nВ установщик входит Java Runtime 8, отдельная Java не нужна."
+!define MUI_WELCOMEPAGE_TEXT "DevAI Studio — помощник разработчика для Android, 75 языков и Vexel.$\r$\n$\r$\nВ установщик входит Java Runtime 8, отдельная Java не нужна."
 !define MUI_FINISHPAGE_RUN "${APP_EXE}"
 !define MUI_FINISHPAGE_RUN_PARAMETERS "-jar $\"${APP_JAR}$\" --target=$Target"
 !define MUI_FINISHPAGE_RUN_TEXT "Запустить DevAI Studio"

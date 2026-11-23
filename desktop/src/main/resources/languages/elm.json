@@ -1,0 +1,11 @@
+{
+  "id": "elm",
+  "name": "Elm",
+  "short": "Elm",
+  "extension": "elm",
+  "comment": "--",
+  "testFramework": "elm-test",
+  "description": "Функциональный фронтенд",
+  "example": "module Main exposing (main)\n\nimport Html exposing (text)\n\nmain =\n    text \"Hello, DevAI!\"",
+  "order": 69
+}

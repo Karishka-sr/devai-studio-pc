@@ -1,0 +1,11 @@
+{
+  "id": "fortran",
+  "name": "Fortran",
+  "short": "Fortran",
+  "extension": "f90",
+  "comment": "!",
+  "testFramework": "pFUnit",
+  "description": "Научные и инженерные расчёты",
+  "example": "program hello\n    print *, \"Hello, DevAI!\"\nend program hello",
+  "order": 42
+}

@@ -1,0 +1,11 @@
+{
+  "id": "sql",
+  "name": "SQL",
+  "short": "SQL",
+  "extension": "sql",
+  "comment": "--",
+  "testFramework": "pgTAP",
+  "description": "Запросы, аналитика и базы данных",
+  "example": "SELECT 'Hello, DevAI!' AS greeting;",
+  "order": 19
+}

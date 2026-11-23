@@ -1,0 +1,11 @@
+{
+  "id": "xml",
+  "name": "XML",
+  "short": "XML",
+  "extension": "xml",
+  "comment": "<!--",
+  "testFramework": "xmllint",
+  "description": "Разметка, Android и конфиги",
+  "example": "<app>\n  <name>DevAI Studio</name>\n  <language>XML</language>\n</app>",
+  "order": 24
+}

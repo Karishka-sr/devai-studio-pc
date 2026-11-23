@@ -1,0 +1,11 @@
+{
+  "id": "move",
+  "name": "Move",
+  "short": "Move",
+  "extension": "move",
+  "comment": "//",
+  "testFramework": "Move Prover",
+  "description": "Смарт-контракты Aptos и Sui",
+  "example": "module hello::greeter {\n    public fun hello(): vector<u8> {\n        b\"Hello, DevAI!\"\n    }\n}",
+  "order": 67
+}

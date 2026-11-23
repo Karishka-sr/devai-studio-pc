@@ -1,0 +1,11 @@
+{
+  "id": "rescript",
+  "name": "ReScript",
+  "short": "ReScript",
+  "extension": "res",
+  "comment": "//",
+  "testFramework": "rescript-test",
+  "description": "Типизированный JavaScript",
+  "example": "Js.log(\"Hello, DevAI!\")",
+  "order": 72
+}

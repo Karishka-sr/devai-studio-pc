@@ -1,0 +1,11 @@
+{
+  "id": "julia",
+  "name": "Julia",
+  "short": "Julia",
+  "extension": "jl",
+  "comment": "#",
+  "testFramework": "Test",
+  "description": "Научные вычисления и ML",
+  "example": "name = \"DevAI\"\nprintln(\"Hello, $name!\")",
+  "order": 29
+}

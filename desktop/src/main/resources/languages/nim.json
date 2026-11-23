@@ -1,0 +1,11 @@
+{
+  "id": "nim",
+  "name": "Nim",
+  "short": "Nim",
+  "extension": "nim",
+  "comment": "#",
+  "testFramework": "unittest",
+  "description": "Системное ПО и скрипты",
+  "example": "echo \"Hello, DevAI!\"",
+  "order": 39
+}

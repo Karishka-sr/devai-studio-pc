@@ -1,0 +1,11 @@
+{
+  "id": "java",
+  "name": "Java",
+  "short": "Java",
+  "extension": "java",
+  "comment": "//",
+  "testFramework": "JUnit 5",
+  "description": "JVM, Spring, Android",
+  "example": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, DevAI!\");\n    }\n}",
+  "order": 2
+}

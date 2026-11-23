@@ -1,0 +1,11 @@
+{
+  "id": "scheme",
+  "name": "Scheme",
+  "short": "Scheme",
+  "extension": "scm",
+  "comment": ";",
+  "testFramework": "SRFI-64",
+  "description": "Lisp и функциональное программирование",
+  "example": "(display \"Hello, DevAI!\")\n(newline)",
+  "order": 45
+}

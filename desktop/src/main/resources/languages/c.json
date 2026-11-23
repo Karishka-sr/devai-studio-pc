@@ -1,0 +1,11 @@
+{
+  "id": "c",
+  "name": "C",
+  "short": "C",
+  "extension": "c",
+  "comment": "//",
+  "testFramework": "Unity / CMocka",
+  "description": "Системное ПО и встраиваемые системы",
+  "example": "#include <stdio.h>\n\nint main(void) {\n    printf(\"Hello, DevAI!\\n\");\n    return 0;\n}",
+  "order": 9
+}

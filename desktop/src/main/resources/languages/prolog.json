@@ -1,0 +1,11 @@
+{
+  "id": "prolog",
+  "name": "Prolog",
+  "short": "Prolog",
+  "extension": "pl",
+  "comment": "%",
+  "testFramework": "PLUnit",
+  "description": "Логика и экспертные системы",
+  "example": "greet(Name) :- format(\"Hello, ~w!~n\", [Name]).\n:- greet(\"DevAI\").",
+  "order": 44
+}

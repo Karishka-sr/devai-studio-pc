@@ -1,0 +1,11 @@
+{
+  "id": "kotlin",
+  "name": "Kotlin",
+  "short": "Kotlin",
+  "extension": "kt",
+  "comment": "//",
+  "testFramework": "JUnit 5",
+  "description": "JVM, Android, Jetpack Compose",
+  "example": "fun main() {\n    println(\"Hello, DevAI!\")\n}",
+  "order": 1
+}

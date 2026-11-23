@@ -1,0 +1,11 @@
+{
+  "id": "clojure",
+  "name": "Clojure",
+  "short": "Clojure",
+  "extension": "clj",
+  "comment": ";",
+  "testFramework": "clojure.test",
+  "description": "JVM и функциональный код",
+  "example": "(println \"Hello, DevAI!\")",
+  "order": 33
+}

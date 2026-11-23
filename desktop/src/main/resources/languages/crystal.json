@@ -1,0 +1,11 @@
+{
+  "id": "crystal",
+  "name": "Crystal",
+  "short": "Crystal",
+  "extension": "cr",
+  "comment": "#",
+  "testFramework": "spec",
+  "description": "Ruby-подобный компилируемый язык",
+  "example": "puts \"Hello, DevAI!\"",
+  "order": 40
+}

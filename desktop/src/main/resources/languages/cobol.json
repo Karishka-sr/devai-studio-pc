@@ -1,0 +1,11 @@
+{
+  "id": "cobol",
+  "name": "COBOL",
+  "short": "COBOL",
+  "extension": "cob",
+  "comment": "*>",
+  "testFramework": "GnuCOBOL",
+  "description": "Банковские и legacy-системы",
+  "example": "       IDENTIFICATION DIVISION.\n       PROGRAM-ID. HELLO.\n       PROCEDURE DIVISION.\n           DISPLAY \"Hello, DevAI!\".\n           STOP RUN.",
+  "order": 43
+}

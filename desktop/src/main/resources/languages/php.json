@@ -1,0 +1,11 @@
+{
+  "id": "php",
+  "name": "PHP",
+  "short": "PHP",
+  "extension": "php",
+  "comment": "//",
+  "testFramework": "PHPUnit",
+  "description": "Веб-бэкенд и WordPress",
+  "example": "<?php\n$name = \"DevAI\";\necho \"Hello, $name!\";",
+  "order": 13
+}

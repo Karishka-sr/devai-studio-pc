@@ -1,0 +1,11 @@
+{
+  "id": "ada",
+  "name": "Ada",
+  "short": "Ada",
+  "extension": "adb",
+  "comment": "--",
+  "testFramework": "AUnit",
+  "description": "Надёжные встраиваемые системы",
+  "example": "with Ada.Text_IO;\n\nprocedure Hello is\nbegin\n   Ada.Text_IO.Put_Line(\"Hello, DevAI!\");\nend Hello;",
+  "order": 48
+}

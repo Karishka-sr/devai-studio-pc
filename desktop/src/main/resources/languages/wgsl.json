@@ -1,0 +1,11 @@
+{
+  "id": "wgsl",
+  "name": "WGSL",
+  "short": "WGSL",
+  "extension": "wgsl",
+  "comment": "//",
+  "testFramework": "—",
+  "description": "Шейдеры WebGPU",
+  "example": "@fragment\nfn main() -> @location(0) vec4<f32> {\n    return vec4<f32>(1.0);\n}",
+  "order": 63
+}

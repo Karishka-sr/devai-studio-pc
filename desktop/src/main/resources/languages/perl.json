@@ -1,0 +1,11 @@
+{
+  "id": "perl",
+  "name": "Perl",
+  "short": "Perl",
+  "extension": "pl",
+  "comment": "#",
+  "testFramework": "Test::More",
+  "description": "Тексты, логи и системные скрипты",
+  "example": "use strict;\nuse warnings;\nmy $name = \"DevAI\";\nprint \"Hello, $name!\\n\";",
+  "order": 26
+}

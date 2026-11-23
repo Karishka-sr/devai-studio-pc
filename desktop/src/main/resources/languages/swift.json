@@ -1,0 +1,11 @@
+{
+  "id": "swift",
+  "name": "Swift",
+  "short": "Swift",
+  "extension": "swift",
+  "comment": "//",
+  "testFramework": "XCTest",
+  "description": "iOS, macOS и SwiftUI",
+  "example": "let name = \"DevAI\"\nprint(\"Hello, \\(name)!\")",
+  "order": 7
+}

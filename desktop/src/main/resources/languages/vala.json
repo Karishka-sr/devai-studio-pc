@@ -1,0 +1,11 @@
+{
+  "id": "vala",
+  "name": "Vala",
+  "short": "Vala",
+  "extension": "vala",
+  "comment": "//",
+  "testFramework": "GLib Test",
+  "description": "GNOME, GObject, GTK",
+  "example": "void main() {\n    print(\"Hello, DevAI!\\n\");\n}",
+  "order": 52
+}

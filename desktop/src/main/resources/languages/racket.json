@@ -1,0 +1,11 @@
+{
+  "id": "racket",
+  "name": "Racket",
+  "short": "Racket",
+  "extension": "rkt",
+  "comment": ";",
+  "testFramework": "RackUnit",
+  "description": "Lisp-диалект, обучение и DSL",
+  "example": "#lang racket\n(displayln \"Hello, DevAI!\")",
+  "order": 54
+}

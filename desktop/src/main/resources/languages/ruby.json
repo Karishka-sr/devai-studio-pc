@@ -1,0 +1,11 @@
+{
+  "id": "ruby",
+  "name": "Ruby",
+  "short": "Ruby",
+  "extension": "rb",
+  "comment": "#",
+  "testFramework": "RSpec",
+  "description": "Веб, Rails и скрипты",
+  "example": "name = \"DevAI\"\nputs \"Hello, #{name}!\" ",
+  "order": 14
+}

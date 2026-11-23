@@ -1,0 +1,11 @@
+{
+  "id": "makefile",
+  "name": "Makefile",
+  "short": "Make",
+  "extension": "mk",
+  "comment": "#",
+  "testFramework": "—",
+  "description": "Сборка проектов и автоматизация",
+  "example": "all:\n\t@echo \"Hello, DevAI!\"",
+  "order": 57
+}

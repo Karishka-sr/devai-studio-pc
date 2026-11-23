@@ -1,0 +1,11 @@
+{
+  "id": "latex",
+  "name": "LaTeX",
+  "short": "TeX",
+  "extension": "tex",
+  "comment": "%",
+  "testFramework": "—",
+  "description": "Документы и вёрстка",
+  "example": "\\documentclass{article}\n\\begin{document}\nHello, DevAI!\n\\end{document}",
+  "order": 60
+}

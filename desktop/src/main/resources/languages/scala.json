@@ -1,0 +1,11 @@
+{
+  "id": "scala",
+  "name": "Scala",
+  "short": "Scala",
+  "extension": "scala",
+  "comment": "//",
+  "testFramework": "ScalaTest",
+  "description": "JVM, данные и функциональный код",
+  "example": "object Main extends App {\n  println(\"Hello, DevAI!\")\n}",
+  "order": 15
+}

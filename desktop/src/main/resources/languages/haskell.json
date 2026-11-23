@@ -1,0 +1,11 @@
+{
+  "id": "haskell",
+  "name": "Haskell",
+  "short": "Haskell",
+  "extension": "hs",
+  "comment": "--",
+  "testFramework": "Hspec",
+  "description": "Функциональное программирование",
+  "example": "main :: IO ()\nmain = putStrLn \"Hello, DevAI!\"",
+  "order": 30
+}

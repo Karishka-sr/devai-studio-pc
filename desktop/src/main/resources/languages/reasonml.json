@@ -1,0 +1,11 @@
+{
+  "id": "reasonml",
+  "name": "ReasonML",
+  "short": "Reason",
+  "extension": "re",
+  "comment": "//",
+  "testFramework": "bs-jest",
+  "description": "OCaml-синтаксис для JavaScript",
+  "example": "Js.log(\"Hello, DevAI!\");",
+  "order": 71
+}

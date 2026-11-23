@@ -1,0 +1,11 @@
+{
+  "id": "hlsl",
+  "name": "HLSL",
+  "short": "HLSL",
+  "extension": "hlsl",
+  "comment": "//",
+  "testFramework": "—",
+  "description": "Шейдеры DirectX",
+  "example": "float4 main() : SV_Target {\n    return float4(1, 1, 1, 1);\n}",
+  "order": 62
+}

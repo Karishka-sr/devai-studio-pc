@@ -1,0 +1,11 @@
+{
+  "id": "typescript",
+  "name": "TypeScript",
+  "short": "TS",
+  "extension": "ts",
+  "comment": "//",
+  "testFramework": "Vitest",
+  "description": "Типизированный JavaScript",
+  "example": "function greet(name: string): string {\n  return `Hello, ${name}!`;\n}\nconsole.log(greet(\"DevAI\"));",
+  "order": 5
+}

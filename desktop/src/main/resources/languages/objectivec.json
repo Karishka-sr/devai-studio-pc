@@ -1,0 +1,11 @@
+{
+  "id": "objectivec",
+  "name": "Objective-C",
+  "short": "Obj-C",
+  "extension": "m",
+  "comment": "//",
+  "testFramework": "XCTest",
+  "description": "Старые iOS/macOS проекты",
+  "example": "#import <Foundation/Foundation.h>\n\nint main() {\n    @autoreleasepool {\n        NSLog(@\"Hello, DevAI!\");\n    }\n    return 0;\n}",
+  "order": 8
+}

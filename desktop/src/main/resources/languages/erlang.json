@@ -1,0 +1,11 @@
+{
+  "id": "erlang",
+  "name": "Erlang",
+  "short": "Erlang",
+  "extension": "erl",
+  "comment": "%",
+  "testFramework": "EUnit",
+  "description": "Телеком и распределённые системы",
+  "example": "-module(main).\n-export([start/0]).\n\nstart() ->\n    io:format(\"Hello, DevAI!~n\").",
+  "order": 32
+}

@@ -1,0 +1,11 @@
+{
+  "id": "qml",
+  "name": "QML",
+  "short": "QML",
+  "extension": "qml",
+  "comment": "//",
+  "testFramework": "Qt Quick Test",
+  "description": "Интерфейсы Qt Quick",
+  "example": "import QtQuick\n\nText {\n    text: \"Hello, DevAI!\"\n}",
+  "order": 65
+}

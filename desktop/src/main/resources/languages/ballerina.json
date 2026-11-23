@@ -1,0 +1,11 @@
+{
+  "id": "ballerina",
+  "name": "Ballerina",
+  "short": "Ballerina",
+  "extension": "bal",
+  "comment": "//",
+  "testFramework": "Ballerina Test",
+  "description": "Облачные интеграции и API",
+  "example": "import ballerina/io;\n\npublic function main() {\n    io:println(\"Hello, DevAI!\");\n}",
+  "order": 53
+}

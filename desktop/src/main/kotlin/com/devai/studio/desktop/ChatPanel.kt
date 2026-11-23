@@ -229,7 +229,7 @@ class ChatPanel(
     }
     private fun appendWelcome() {
         appendHeader("DevAI Studio", userStyle)
-        append("Готов помочь с Android, Kotlin, Compose, 50 языками программирования и Vexel. Выберите провайдера и модель в «Настройках», затем напишите задачу.\n", noteStyle)
+        append("Готов помочь с Android, Kotlin, Compose, 75 языками программирования и Vexel. Выберите провайдера и модель в «Настройках», затем напишите задачу.\n", noteStyle)
     }
 
     private fun appendHeader(title: String, style: Style) {

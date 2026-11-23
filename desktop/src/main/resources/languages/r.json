@@ -1,0 +1,11 @@
+{
+  "id": "r",
+  "name": "R",
+  "short": "R",
+  "extension": "r",
+  "comment": "#",
+  "testFramework": "testthat",
+  "description": "Статистика и анализ данных",
+  "example": "name <- \"DevAI\"\ncat(\"Hello,\", name, \"!\\n\")",
+  "order": 27
+}

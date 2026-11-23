@@ -1,0 +1,11 @@
+{
+  "id": "solidity",
+  "name": "Solidity",
+  "short": "Solidity",
+  "extension": "sol",
+  "comment": "//",
+  "testFramework": "Foundry",
+  "description": "Смарт-контракты EVM",
+  "example": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\n\ncontract Greeter {\n    function greet() external pure returns (string memory) {\n        return \"Hello, DevAI!\";\n    }\n}",
+  "order": 37
+}

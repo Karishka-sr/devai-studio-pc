@@ -1,0 +1,11 @@
+{
+  "id": "csharp",
+  "name": "C#",
+  "short": "C#",
+  "extension": "cs",
+  "comment": "//",
+  "testFramework": "xUnit",
+  "description": ".NET, Unity и Windows",
+  "example": "using System;\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, DevAI!\");\n    }\n}",
+  "order": 11
+}

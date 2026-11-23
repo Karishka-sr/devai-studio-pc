@@ -30,7 +30,7 @@ tasks.register<Jar>("fatJar") {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest {
         attributes["Main-Class"] = "com.devai.studio.desktop.MainKt"
-        attributes["Implementation-Version"] = "3.1.0"
+        attributes["Implementation-Version"] = "3.2.0"
     }
     from(sourceSets.main.get().output)
     dependsOn(configurations.runtimeClasspath)

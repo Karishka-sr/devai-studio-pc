@@ -1,0 +1,11 @@
+{
+  "id": "verilog",
+  "name": "Verilog",
+  "short": "Verilog",
+  "extension": "v",
+  "comment": "//",
+  "testFramework": "cocotb",
+  "description": "ПЛИС и цифровая логика",
+  "example": "module hello;\n  initial begin\n    $display(\"Hello, DevAI!\");\n  end\nendmodule",
+  "order": 50
+}

@@ -1,0 +1,11 @@
+{
+  "id": "elixir",
+  "name": "Elixir",
+  "short": "Elixir",
+  "extension": "ex",
+  "comment": "#",
+  "testFramework": "ExUnit",
+  "description": "Отказоустойчивые бэкенды",
+  "example": "defmodule Main do\n  def hello(name), do: \"Hello, #{name}!\"\nend\n\nIO.puts(Main.hello(\"DevAI\"))",
+  "order": 31
+}

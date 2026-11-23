@@ -1,5 +1,7 @@
 package com.devai.studio.desktop
 
+import org.json.JSONObject
+
 data class CodeLanguage(
     val id: String,
     val name: String,
@@ -7,6 +9,7 @@ data class CodeLanguage(
     val extension: String,
     val testFramework: String,
     val description: String,
+    val order: Int = 0,
 ) {
     override fun toString(): String = name
 }
@@ -14,7 +17,7 @@ data class CodeLanguage(
 object CodeLanguages {
     const val DEFAULT_ID = "kotlin"
 
-    val all: List<CodeLanguage> = listOf(
+    private val builtIn: List<CodeLanguage> = listOf(
         CodeLanguage(
             id = "kotlin",
             name = "Kotlin",
@@ -417,9 +420,40 @@ object CodeLanguages {
         ),
     )
 
-    val default: CodeLanguage = all.first { it.id == DEFAULT_ID }
+    var all: List<CodeLanguage> = builtIn
+        private set
 
-    fun byId(id: String?): CodeLanguage? = all.firstOrNull { it.id == id }
+    val default: CodeLanguage
+        get() = all.firstOrNull { it.id == DEFAULT_ID } ?: all.first()
+
+    fun byId(id: String?): CodeLanguage? = all.firstOrNull { it.id == id?.trim()?.lowercase() }
+
+    /** Читает языки из resources/languages, чтобы каталог жил в файлах сборки. */
+    fun load() {
+        val loader = CodeLanguages::class.java.classLoader
+        val index = runCatching {
+            loader.getResourceAsStream("languages/index.txt")?.bufferedReader()?.readLines().orEmpty()
+        }.getOrDefault(emptyList())
+        val loaded = index.filter { it.endsWith(".json") }.mapNotNull { file ->
+            runCatching {
+                loader.getResourceAsStream("languages/$file")?.bufferedReader()?.use { reader ->
+                    val json = JSONObject(reader.readText())
+                    val id = json.optString("id").trim()
+                    if (id.isBlank()) return@use null
+                    CodeLanguage(
+                        id = id,
+                        name = json.optString("name", id),
+                        short = json.optString("short", id),
+                        extension = json.optString("extension"),
+                        testFramework = json.optString("testFramework", "—"),
+                        description = json.optString("description"),
+                        order = json.optInt("order", 0),
+                    )
+                }
+            }.getOrNull()
+        }.sortedWith(compareBy({ it.order }, { it.name }))
+        if (loaded.isNotEmpty()) all = loaded
+    }
 
     fun selected(id: String?): CodeLanguage = byId(id) ?: default
 

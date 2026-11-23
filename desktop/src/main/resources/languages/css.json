@@ -1,0 +1,11 @@
+{
+  "id": "css",
+  "name": "CSS",
+  "short": "CSS",
+  "extension": "css",
+  "comment": "/*",
+  "testFramework": "Playwright",
+  "description": "Стили и адаптивная вёрстка",
+  "example": "body {\n  font-family: system-ui, sans-serif;\n  background: #0f172a;\n  color: #e2e8f0;\n}",
+  "order": 21
+}

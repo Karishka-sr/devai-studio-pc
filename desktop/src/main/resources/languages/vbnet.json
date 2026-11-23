@@ -1,0 +1,11 @@
+{
+  "id": "vbnet",
+  "name": "Visual Basic .NET",
+  "short": "VB.NET",
+  "extension": "vb",
+  "comment": "'",
+  "testFramework": "xUnit",
+  "description": ".NET и Windows",
+  "example": "Module Program\n    Sub Main()\n        Console.WriteLine(\"Hello, DevAI!\")\n    End Sub\nEnd Module",
+  "order": 35
+}

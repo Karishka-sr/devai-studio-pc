@@ -1,0 +1,11 @@
+{
+  "id": "lua",
+  "name": "Lua",
+  "short": "Lua",
+  "extension": "lua",
+  "comment": "--",
+  "testFramework": "busted",
+  "description": "Игры, Neovim и встраиваемые скрипты",
+  "example": "local name = \"DevAI\"\nprint(\"Hello, \" .. name .. \"!\")",
+  "order": 25
+}
