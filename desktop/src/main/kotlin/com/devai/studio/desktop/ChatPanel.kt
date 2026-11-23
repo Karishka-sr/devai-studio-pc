@@ -12,6 +12,7 @@ import javax.swing.AbstractAction
 import javax.swing.BorderFactory
 import javax.swing.JButton
 import javax.swing.JCheckBox
+import javax.swing.JComboBox
 import javax.swing.JLabel
 import javax.swing.JPanel
 import javax.swing.JScrollPane
@@ -32,6 +33,7 @@ class ChatPanel(
     private val sendButton = Theme.button("Отправить", true)
     private val stopButton = Theme.button("Стоп")
     private val searchBox = JCheckBox("Веб-поиск", settings.searchEnabled)
+    private val languageBox = JComboBox(CodeLanguages.all.toTypedArray())
     private val providerLabel = Theme.label("", 12, Theme.muted)
     private val modelLabel = Theme.label("", 12, Theme.muted)
     private val messages = mutableListOf<Message>()
@@ -95,10 +97,23 @@ class ChatPanel(
         actions.add(save)
         top.add(actions, BorderLayout.EAST)
         val quick = JPanel(FlowLayout(FlowLayout.LEFT, 6, 0)).apply { background = Theme.bg }
+        languageBox.selectedItem = CodeLanguages.selected(settings.codeLanguage)
+        languageBox.font = Theme.font(12)
+        languageBox.background = Theme.panel
+        languageBox.foreground = Theme.text
+        languageBox.toolTipText = "Основной язык программирования для ответов"
+        languageBox.addActionListener {
+            val picked = languageBox.selectedItem as? CodeLanguage ?: return@addActionListener
+            settings.codeLanguage = picked.id
+            SettingsStore.save(settings)
+            status("Язык кода: ${picked.name}")
+        }
+        quick.add(languageBox)
         listOf(
             "Объясни этот код" to "Объясни этот код и укажи возможные ошибки:\n",
             "Найди ошибку" to "Помоги найти ошибку в этом коде:\n",
             "Сгенерируй экран" to "Сгенерируй Compose-экран для Android:\n",
+            "Код" to "Сгенерируй рабочий пример кода:\n",
             "Vexel" to "Как добавить экран в Vexel-конструктор?\n",
         ).forEach { (title, prompt) ->
             val b = Theme.button(title)
@@ -142,6 +157,8 @@ class ChatPanel(
         providerLabel.text = settings.provider.title
         modelLabel.text = settings.model.ifBlank { "модель не выбрана" }
         searchBox.isSelected = settings.searchEnabled
+        val selectedLanguage = CodeLanguages.selected(settings.codeLanguage)
+        if (languageBox.selectedItem != selectedLanguage) languageBox.selectedItem = selectedLanguage
     }
 
     fun focusInput() = input.requestFocus()
@@ -166,6 +183,7 @@ class ChatPanel(
     }
     private fun requestAnswer() {
         var system = settings.systemPrompt
+        system += "\n\n" + CodeLanguages.instruction(CodeLanguages.selected(settings.codeLanguage))
         if (settings.searchEnabled) {
             SwingUtilities.invokeLater { status("Ищу в интернете…") }
             val query = messages.lastOrNull { it.role == "user" }?.content.orEmpty()
@@ -211,7 +229,7 @@ class ChatPanel(
     }
     private fun appendWelcome() {
         appendHeader("DevAI Studio", userStyle)
-        append("Готов помочь с Android, Kotlin, Compose и Vexel. Выберите провайдера и модель в «Настройках», затем напишите задачу.\n", noteStyle)
+        append("Готов помочь с Android, Kotlin, Compose, 50 языками программирования и Vexel. Выберите провайдера и модель в «Настройках», затем напишите задачу.\n", noteStyle)
     }
 
     private fun appendHeader(title: String, style: Style) {

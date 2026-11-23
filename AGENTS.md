@@ -1,6 +1,7 @@
 # DevAI Studio PC — repository notes
 
-- Windows desktop client: Kotlin JVM 1.8 + Swing.
+- Windows desktop client: Kotlin JVM 1.8 + Swing, version 3.1.0.
+- `CodeLanguages.kt` contains 50 languages; selection is stored in `AppSettings.codeLanguage` and appended to the system prompt.
 - Main class: `com.devai.studio.desktop.MainKt`.
 - Build: `./gradlew :desktop:fatJar` → `desktop/build/libs/DevAIStudio-all.jar`.
 - Installer: `desktop/installer.nsi`, built with `makensis installer.nsi` from a staging directory.

@@ -29,6 +29,7 @@ data class AppSettings(
     var tavilyKey: String = "",
     var githubToken: String = "",
     var targetWindows: Int = OsInfo.detectedWindows(),
+    var codeLanguage: String = CodeLanguages.DEFAULT_ID,
 ) {
     fun copyForProvider(provider: Provider): AppSettings = copy(
         provider = provider,
@@ -108,6 +109,7 @@ object SettingsStore {
             tavilyKey = p.getProperty("tavilyKey", ""),
             githubToken = p.getProperty("githubToken", ""),
             targetWindows = p.getProperty("targetWindows")?.toIntOrNull() ?: defaults.targetWindows,
+            codeLanguage = p.getProperty("codeLanguage", defaults.codeLanguage),
         )
     }
 
@@ -127,6 +129,7 @@ object SettingsStore {
         p.setProperty("tavilyKey", s.tavilyKey)
         p.setProperty("githubToken", s.githubToken)
         p.setProperty("targetWindows", s.targetWindows.toString())
+        p.setProperty("codeLanguage", s.codeLanguage)
         val tmp = AppPaths.home.resolve("settings.properties.tmp").toFile()
         FileOutputStream(tmp).use { p.store(it, "DevAI Studio") }
         Files.move(tmp.toPath(), AppPaths.settingsFile, java.nio.file.StandardCopyOption.REPLACE_EXISTING)

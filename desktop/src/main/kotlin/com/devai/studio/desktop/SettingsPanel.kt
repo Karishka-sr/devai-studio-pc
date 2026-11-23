@@ -33,6 +33,7 @@ class SettingsPanel(
     private val topP = JSpinner(SpinnerNumberModel(0.95, 0.0, 1.0, 0.05))
     private val maxTokens = JSpinner(SpinnerNumberModel(2048, 64, 32768, 64))
     private val timeout = JSpinner(SpinnerNumberModel(120, 15, 600, 15))
+    private val language = JComboBox(CodeLanguages.all.toTypedArray())
     private val systemPrompt = Theme.area(5)
     private val tavilyKey = Theme.field(34)
     private val githubToken = Theme.field(34)
@@ -71,6 +72,9 @@ class SettingsPanel(
             row("Максимум токенов", maxTokens),
             row("Таймаут, секунд", timeout),
         ))
+        content.add(section("Язык кода",
+            row("Основной язык", language, "Подставляется в системный промпт: ${CodeLanguages.all.size} языков"),
+        ))
         content.add(section("Системный промпт", row("Инструкция для модели", scroll(systemPrompt, 100))))
         content.add(section("Веб-поиск",
             row("Tavily API-ключ (необязательно)", tavilyKey, "Без ключа работают GitHub, Stack Overflow, Wikipedia, DuckDuckGo и Hacker News"),
@@ -108,6 +112,7 @@ class SettingsPanel(
         topP.value = settings.topP
         maxTokens.value = settings.maxTokens
         timeout.value = settings.timeoutSeconds
+        language.selectedItem = CodeLanguages.selected(settings.codeLanguage)
         systemPrompt.text = settings.systemPrompt
         tavilyKey.text = settings.tavilyKey
         githubToken.text = settings.githubToken
@@ -130,6 +135,7 @@ class SettingsPanel(
         settings.topP = (topP.value as Number).toDouble()
         settings.maxTokens = (maxTokens.value as Number).toInt()
         settings.timeoutSeconds = (timeout.value as Number).toInt()
+        settings.codeLanguage = (language.selectedItem as CodeLanguage).id
         settings.systemPrompt = systemPrompt.text
         settings.tavilyKey = tavilyKey.text.trim()
         settings.githubToken = githubToken.text.trim()
